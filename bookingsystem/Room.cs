@@ -1,7 +1,5 @@
 // Add in the imports here 
 
-
-
 using System.Numerics;
 
 namespace bookingsystem;
@@ -45,6 +43,9 @@ public class Room {
 
         double totalCost = nights * RoomPrice;
 
+        Console.WriteLine("just calculated the cost"); 
+        
+
         return totalCost;
 
     }
@@ -53,11 +54,14 @@ public class Room {
 
 
     // Add in the check-in function here 
-    public void ReserveRoom(string customerName, DateTime checkIN, DateTime checkout) {
+    // public void ReserveRoom(string customerName, DateTime checkIN, DateTime checkout) {
+    public void ReserveRoom() {
         Available = false;
         RoomStatus = "Reserved";
         Console.WriteLine("the Room has just been Reserved");
     }
+    
+    
 
 
     // Add in a cancel room reservation here 
