@@ -5,8 +5,6 @@
 using System.Numerics;
 
 namespace bookingsystem;
-
-
 public class Room {
 
 
